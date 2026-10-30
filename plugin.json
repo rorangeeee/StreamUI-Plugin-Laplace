@@ -1,0 +1,8 @@
+{
+  "id": "laplace", "name": "LAPLACE 弹幕", "version": "1.0.0", "sdkVersion": 1,
+  "assembly": "Laplace.dll", "type": "StreamUI.Laplace.LaplacePlugin",
+  "capabilities": ["chat.message", "chat.gift", "chat.superchat"], "settingsPage": "settings.html",
+  "legacySettingsKey": "laplace",
+  "repository": "https://github.com/rorangeeee/StreamUI-Plugin-Laplace",
+  "build": { "kind": "dotnet", "project": "Laplace.csproj", "sdkVersion": 1 }
+}
