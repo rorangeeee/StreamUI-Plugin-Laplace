@@ -1,5 +1,5 @@
 {
-  "id": "laplace", "name": "LAPLACE 弹幕", "version": "1.0.0", "sdkVersion": 1,
+  "id": "laplace", "name": "LAPLACE 弹幕", "version": "1.0.1", "sdkVersion": 1,
   "assembly": "Laplace.dll", "type": "StreamUI.Laplace.LaplacePlugin",
   "capabilities": ["chat.message", "chat.gift", "chat.superchat"], "settingsPage": "settings.html",
   "legacySettingsKey": "laplace",
