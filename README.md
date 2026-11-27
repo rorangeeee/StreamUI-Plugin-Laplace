@@ -4,7 +4,7 @@ StreamUICore 的独立 LAPLACE Event Bridge 插件。负责桥接连接、可选
 
 ## 构建与使用
 
-克隆到 Core/plugins/laplace，然后执行：
+克隆到 Core/plugins/when.laplace（或开发目录 Core/plugins/laplace），然后执行：
 
 ~~~powershell
 powershell.exe -NoProfile -File build.ps1 -SdkPath <Core>/sdk/native
@@ -14,8 +14,8 @@ powershell.exe -NoProfile -File build.ps1 -SdkPath <Core>/sdk/native
 
 ## 公开能力
 
-- plugin.laplace.status：{state,error,localBridge,events,lastEventAt}。
-- plugin.laplace.chat.message、chat.gift、chat.superchat：标准化消息。
+- `plugin.when.laplace.status`：`{state,error,localBridge,events,lastEventAt}`。
+- `plugin.when.laplace.chat.message`、`chat.gift`、`chat.superchat`：标准化消息。
 
 消息为 {id,kind,platform,timestamp,user,text,gift,payment}。user 包含 id、name、level、medalName、medalLevel；gift 包含 name、count；payment 包含 amount、currency。时间为毫秒，金额未知为 null。插件去重但不定义文案、排队、打字或视觉效果，这些由场景组件完成。
 
